@@ -24,11 +24,11 @@ const createBoxes = amount => {
   }
   contsinerElRef.append(...massiveEl);
 };
-const onGetValue = () => {
+const onChangeColor = () => {
   [...colectionChild].forEach(el => el.remove());
   createBoxes(inputCreateValueRef.value);
 };
-createBtnRef.addEventListener('click', onGetValue);
+createBtnRef.addEventListener('click', onChangeColor);
 
 const destroyBoxes = () => {
   [...colectionChild].forEach(el => el.remove());
